@@ -1,0 +1,13 @@
+﻿@model BlogApp.Models.Post
+
+<h2>Nowy Post</h2>
+
+<form asp-action="Create">
+    <label>Tytuł:</label>
+    <input asp-for="Title" />
+
+    <label>Treść:</label>
+    <textarea asp-for="Content"></textarea>
+
+    <button type="submit">Zapisz</button>
+</form>

@@ -1,0 +1,15 @@
+﻿@model BlogApp.Models.Post
+
+<h2>Edytuj Post</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Tytuł:</label>
+    <input asp-for="Title" />
+
+    <label>Treść:</label>
+    <textarea asp-for="Content"></textarea>
+
+    <button type="submit">Zapisz zmiany</button>
+</form>
